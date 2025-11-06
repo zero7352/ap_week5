@@ -24,6 +24,11 @@ i_have_a_dream = "And when this happens, and when we allow freedom ring, when we
 
 reversed_i_have_a_dream = print(i_have_a_dream [: : -1])
 # From Descriptions:
+famous_quote = "Ask not what your country can do for you - ask what you can do for your country, - John F Kennedy"
+
+john_f_kennedy =print(famous_quote.find("john f. kennedy"))
+
+extracted_name = print(famous_quote[98:])
 # Extract the name of the famous personality from the quote "Ask not what your country can do for you — ask what you can do for your country. - John F. Kennedy"
 
 # Manipulating Words:
