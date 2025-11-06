@@ -32,32 +32,66 @@ extracted_name = print(famous_quote[98:])
 # Extract the name of the famous personality from the quote "Ask not what your country can do for you — ask what you can do for your country. - John F. Kennedy"
 
 # Manipulating Words:
+
 # Given the string info = "Python is fun. Fun is good. Good is subjective.",
 # a. Extract the word 'subjective' without knowing its exact position.
+phrase1 = "Python is fun. fun is good. good is subject."
 # b. Extract every third word.
+subjective =print(phrase1.find("subjective"))
 # c. Reverse the positions of the words, but keep the characters in each word in the same order.
-
+every_3rd_word = print(phrase1 [::2])
 # Problem Set 3: String Methods
 # Upper & Lower:
 # Convert the following text to lowercase: "MAY THE FORCE BE WITH YOU."
 
 # String Joining and Splitting:
 # Given the list motto = ["Make", "haste", "slowly."],
+motto = ["Make", "haste", "slowly."]
+
 # a. Convert the list into a single string.
+motto_str = " ".join(motto)
+print("Joined string:", motto_str)
+
 # b. Now, split the string at every occurrence of the letter 'a'.
+split_motto = motto_str.split('a')
+print("String split at 'a':", split_motto)
+
 
 # Replacing Words:
 # Modify the sentence: "Life is what happens when you are busy making other plans."
+sentence = "Life is what happens when you are busy making other plans."
+
 # a. Replace "busy" with "distracted".
+sentence = sentence.replace("busy", "distracted")
+
 # b. Replace "plans" with "mistakes".
+sentence = sentence.replace("plans", "mistakes")
+print("Modified sentence:", sentence)
+
 
 # Problem Set 4: String Properties and Advanced Operations
+
 # Repetition:
 # Concatenate the word "Iteration" 7 times.
+word = "Iteration"
+repeated_word = word * 7
+print("Repeated word:", repeated_word)
+
 
 # Word Search:
-# Check if the word "moonlight" appears in the quote: "With freedom, books, flowers, and the moon, who could not be happy? - Oscar Wilde"
+# Check if the word "moonlight" appears in the quote.
+quote = "With freedom, books, flowers, and the moon, who could not be happy? - Oscar Wilde"
+contains_moonlight = "moonlight" in quote
+print("Contains 'moonlight'?", contains_moonlight)
+
 
 # Length and Count:
-# a. Calculate the number of characters (including spaces and punctuation) in the word/phrase: "Supercalifragilisticexpialidocious".
-# b. Count the number of times the letter 'i' appears in the same word/phrase.
+# a. Calculate the number of characters (including spaces and punctuation)
+phrase = "Supercalifragilisticexpialidocious"
+num_characters = len(phrase)
+
+# b. Count the number of times the letter 'i' appears
+i_count = phrase.count('i')
+
+print("Number of characters:", num_characters)
+print("Number of 'i's:", i_count)
